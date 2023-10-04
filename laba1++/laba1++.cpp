@@ -15,12 +15,15 @@ int main()
     cout << "2. wssa?    " << endl;
     cout << "3. ^?    " << endl;
     cin >> e;
+    while (e != 7361874)
+        {
     if (e == 1)
     {
         cout << "a b c???" << endl;;
         cin >> a >> b >> c;
         s = a * b * c;
         cout << s;
+        e = 7361874;
     }
     else
         if (e == 2) 
@@ -72,6 +75,7 @@ int main()
                                                 cout << "autumn";
                                             }
                             }
+            e = 7361874;
         }
     if (e == 3)
     {
@@ -82,8 +86,15 @@ int main()
         cin >> n;
         k = log2(n) / log2(m);
         cout << "k: " << k;
+        e = 7361874;
     }
     else
-        cout << "wrong answer";
+        if (e < 1 || e > 3) 
+        {
+        cout << "wrong answer" << endl;
+        cout << "new e: ";
+        cin >> e;
+        }
+        }
 }
 
